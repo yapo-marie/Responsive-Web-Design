@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enquête – Retour d’expérience produit</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1 id="title">Enquête : votre avis compte</h1>
+    <p id="description">
+      Aidez-nous à améliorer notre produit en répondant à ces quelques questions.
+      Cela prend 2 minutes.
+    </p>
+    <form id="survey-form" action="#" method="post" novalidate>      <div class="grid">
+        <div class="field">
+          <label id="name-label" for="name">Nom complet</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Ex. Marie Curie"
+            required
+            autocomplete="name"
+            inputmode="text"
+          />
+        </div>
+
+        <div class="field">
+          <label id="email-label" for="email">Adresse e-mail</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="exemple@domaine.com"
+            required
+            autocomplete="email"
+            inputmode="email"
+          />
+        </div>
+
+        <div class="field">
+          <label id="number-label" for="number">Années d’expérience (0–40)</label>
+          <input
+            id="number"
+            name="experience-years"
+            type="number"
+            placeholder="Ex. 5"
+            min="0"
+            max="40"
+            inputmode="numeric"
+          />
+        </div>
+      </div>
+      <div class="field">
+        <label for="dropdown">Quel est votre rôle principal ?</label>
+        <select id="dropdown" name="role">
+          <option value="">— Sélectionnez une option —</option>
+          <option value="dev">Développeur / Développeuse</option>
+          <option value="po">Product Owner / Chef de produit</option>
+          <option value="design">Designer</option>
+          <option value="autre">Autre</option>
+        </select>
+      </div>
+      <fieldset class="field">
+        <legend>Satisfaction globale</legend>
+        <div class="choices">
+          <label class="choice">
+            <input type="radio" name="satisfaction" value="1" />
+            1 – Très insatisfait·e
+          </label>
+          <label class="choice">
+            <input type="radio" name="satisfaction" value="2" />
+            2
+          </label>
+          <label class="choice">
+            <input type="radio" name="satisfaction" value="3" />
+            3
+          </label>
+          <label class="choice">
+            <input type="radio" name="satisfaction" value="4" />
+            4
+          </label>
+          <label class="choice">
+            <input type="radio" name="satisfaction" value="5" />
+            5 – Très satisfait·e
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="field">
+        <legend>Fonctionnalités les plus utilisées (choix multiples)</legend>
+        <div class="choices">
+          <label class="choice">
+            <input type="checkbox" name="features" value="dashboard" />
+            Tableau de bord
+          </label>
+          <label class="choice">
+            <input type="checkbox" name="features" value="automation" />
+            Automatisations
+          </label>
+          <label class="choice">
+            <input type="checkbox" name="features" value="api" />
+            API & Webhooks
+          </label>
+          <label class="choice">
+            <input type="checkbox" name="features" value="collab" />
+            Collaboration
+          </label>
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="comments">Un commentaire ou une idée d’amélioration ?</label>
+        <textarea id="comments" name="comments" rows="5" placeholder="Écrivez votre message ici…"></textarea>
+
+      </div>
+
+      <div class="actions">
+        <input id="submit" type="submit" class="button" value="Envoyer mes réponses" />
+      </div>
+    </form>
+
+    <p class="fine-print">
+      En envoyant, vous acceptez que vos réponses soient traitées pour améliorer le produit.
+    </p>
+  </main>
+</body>
+</html>
+
